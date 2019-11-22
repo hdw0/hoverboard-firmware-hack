@@ -41,7 +41,7 @@
 
 #define INACTIVITY_TIMEOUT 8        // minutes of not driving until poweroff. it is not very precise.
 
-//#define WHEEL_SIZE_INCHES 8.5                      // - set to your wheelsize to override the default 6.5
+#define WHEEL_SIZE_INCHES 10.5                      // - set to your wheelsize to override the default 6.5
 
 // ############################### LCD DEBUG ###############################
 
@@ -128,7 +128,7 @@
 
 #define SPEED_IS_KMH		//ROBO spped is 10*km/h so 60 would be 6.0 km/h
 	// better only use with digital communication like uart 
-#define MAX_RECUPERATION 3.0  //ROBO increase gas when more then 3.0 amps go back into the battery
+#define MAX_RECUPERATION 6.0  //ROBO increase gas when more then 3.0 amps go back into the battery
   // ny chain drive is to loose to take more then 3 Amps :-/
   
 #define FILTER              0.01  // lower value == softer filter. do not use values <0.01, you will get float precision issues.
@@ -138,7 +138,7 @@
 #define INVERT_L_DIRECTION
 //#define SWITCH_WHEELS            // switch right and left wheel. Watch out, you probably also need to invert directions.
 
-#define BEEPS_BACKWARD 1    // 0 or 1
+#define BEEPS_BACKWARD 0    // 0 or 1
 
 //Turbo boost at high speeds while button1 is pressed:
 //#define ADDITIONAL_CODE if (button1 && speedR > 700) { /* field weakening at high speeds */  weakl = cmd1 - 700; /* weak should never exceed 400 or 450 MAX!! */  weakr = cmd1 - 700; } else {  weakl = 0;  weakr = 0; }
